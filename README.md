@@ -1,51 +1,71 @@
-# Unit 14 | Assignment - JavaScript and DOM Manipulation
+# Unit 17 | Assignment - Visualizing Data with Leaflet
 
 ## Background
 
-WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
+![1-Logo](Images/1-Logo.png)
 
-There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
+Welcome to the United States Geological Survey, or USGS for short! The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. As a new hire, you will be helping them out with an exciting new project!
 
-That's why we are hiring you. We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
-
-You can handle this... right? The planet Earth needs to know what we have found!
+The USGS is interested in building a new set of tools that will allow them visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. Their hope is that being able to visualize their data will allow them to better educate the public and other government organizations (and hopefully secure more funding..) on issues facing our planet.
 
 ## Your Task
 
-### Level 1: Automatic Table and Date Search
+### Level 1: Basic Visualization
 
-* Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
+![2-BasicMap](Images/2-BasicMap.png)
 
-* Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
+Your first task is to visualize an earthquake data set.
 
-  * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
+1. **Get your data set**
 
-* Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+   ![3-Data](Images/3-Data.png)
 
-### Level 2: Multiple Search Categories (Optional)
+   The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page and pick a data set to visualize. When you click on a data set, for example 'All Earthquakes from the Past 7 Days', you will be given a JSON representation of that data. You will be using the URL of this JSON to pull in the data for our visualization.
 
-* Complete all of Level 1 criteria.
+   ![4-JSON](Images/4-JSON.png)
 
-* Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
+2. **Import & Visualize the Data**
 
-  1. `date/time`
-  2. `city`
-  3. `state`
-  4. `country`
-  5. `shape`
+   Create a map using Leaflet that plots all of the earthquakes from your data set based on their longitude and latitude.
+
+   * Your data markers should reflect the magnitude of the earthquake in their size and color. Earthquakes with higher magnitudes should appear larger and darker in color.
+
+   * Include popups that provide additional information about the earthquake when a marker is clicked.
+
+   * Create a legend that will provide context for your map data.
+
+   * Your visualization should look something like the map above.
+
+- - -
+
+### Level 2: More Data (Optional)
+
+![5-Advanced](Images/5-Advanced.png)
+
+The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
+
+In this step we are going to..
+
+* Plot a second data set on our map.
+
+* Add a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
+
+* Add layer controls to our map.
 
 - - -
 
-### Dataset
+### Assessment
 
-* [UFO Sightings Data](StarterCode/static/js/data.js)
+Your final product will be assessed on the following metrics:
 
-- - -
+* Completion of assigned tasks
+
+* Visual appearance
+
+* Professionalism
 
 **Good luck!**
 
-- - -
+## Copyright
 
-### Copyright
-
-Data Boot Camp © 2018. All Rights Reserved.
+Data Boot Camp (C) 2018. All Rights Reserved.

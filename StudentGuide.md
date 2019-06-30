@@ -1,37 +1,25 @@
-# Unit 14 - Intro to Javascript
+# Unit 17 - Leaflet.js
 
 ## Objectives
 
-* Understand JS fundamentals: arrays, conditionals, loops, functions, objects.
-* Understand functional programming with map, forEach.
-* Work with common data structures.
-* Be introduced to data driven documents (d3.js).
-* Understand how to select elements using d3.select.
-* Use d3 for basic DOM manipulation.
-* Understand how to use callbacks.
-* Understand the structure of html tables.
-* Populate a table using static data structures.
-* Understand events.
-* Use d3 to attach events to DOM elements.
-* Dynamically manipulate the DOM through events.
-* Filter data with JavaScript.
+* Understand the benefits that visualizing data with maps can provide.
+* Learn the basics of creating maps and plotting data with the Leaflet.js library.
+* Gain an understanding of the GeoJSON format.
+* Understand the concept of layers and layer controls and how we can use them to add interactivity to our maps.
+* Gain a firm grasp of mapping with GeoJSON.
+* Learn about and practice using Leaflet plugins and third-party libraries.
+* Learn how different maps can effectively visualize different datasets.
+* Gain a Leaflet mastery by completing an in-class project.
+* Understand how different types of maps are better for visualizing different datasets.
 
 - - -
 
-### Helpful Links
+## Helpful Links
 
-* [Interactive JavaScript Sheet](http://htmlcheatsheet.com/js/)
-
-* [Scrimba Intro to JavaScript](https://scrimba.com/g/gintrotojavascript)
-
-* [Scrimba ES6+](https://scrimba.com/g/gintrotoes6)
-
-* [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
-
-* [JavaScript Tutorial](https://watchandcode.com/p/practical-javascript)
+* [Leaflet.js Tutorial](https://leafletjs.com/examples.html)
 
 - - -
 
 ### Copyright
 
-Data Boot Camp © 2019. All Rights Reserved.
+Trilogy Education Services © 2019. All Rights Reserved.
